@@ -30,8 +30,14 @@
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
+    <style>
+        .izquierda {
+            left:0px !important;
+        }
+    </style>
+    
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
+<body style="overflow: hidden;" data-spy="scroll" data-target="#navbar" class="static-layout">
 	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center text-white" href="/">
@@ -329,9 +335,9 @@
                     <!-- Btn Filter -->
                     <div class="filter-button-group btn-filter d-flex justify-content-center">
                         <a tabindex="0" class="is-checked" data-filter="*">Todas</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
+                        <a tabindex="0" data-filter=".Shooters">Shooters</a>
+                        <a tabindex="0" data-filter=".MOBA">MOBA</a>
+                        <a tabindex="0" data-filter=".Redes">Redes</a>
                     </div>
                     <!-- End of Btn Filter -->
                     <!-- Portfolio Content -->
@@ -339,16 +345,19 @@
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
                         <!-- Portfolio Item -->
-                        <div class="grid-item minimalism" data-aos="fade-up">
+                        <div class="grid-item Shooters" data-aos="fade-up">
                             <div class="grid-item-wrapper">
                                 <img src="https://steamuserimages-a.akamaihd.net/ugc/2438013375545544624/493B74EE97278C9B881C8E1D61E5E87A8C73E14A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="https://steamuserimages-a.akamaihd.net/ugc/2438013375545544624/493B74EE97278C9B881C8E1D61E5E87A8C73E14A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" title="Photo-1">
-                                            <span class="lnr lnr-move"></span>
+                                        <a class="img-pop" data-rel="lightcase" href="https://steamuserimages-a.akamaihd.net/ugc/2438013375545544624/493B74EE97278C9B881C8E1D61E5E87A8C73E14A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" title="Logo">
+                                            <span class="lnr lnr-frame-expand"></span>
                                         </a>
-                                        <a class="ext-link" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish" target="_blank">
+                                        <a class="ext-link" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=spanish" target="_blank" title="Link">
                                             <span class="lnr lnr-link"></span>
+                                        </a>
+                                        <a class="ext-link" target="_blank" href="https://csgostats.gg/player/76561198969734308" title="Perfil">
+                                            <span class="lnr lnr-user"></span>
                                         </a>
                                     </div>
                                     <div class="grid-title">
@@ -360,16 +369,19 @@
                         </div>
                         <!-- End of Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
+                        <div class="grid-item Shooters" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="portfolio-img" class="portfolio-item" style="width: 355px;">
+                                <img src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="portfolio-img" class="portfolio-item" style="width: 370px;">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" title="Ship">
-                                            <span class="lnr lnr-move"></span>
+                                        <a class="img-pop" data-rel="lightcase" href="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" title="Logo">
+                                            <span class="lnr lnr-frame-expand"></span>
                                         </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <a class="ext-link" href="https://playvalorant.com/es-es/" target="_blank" title="Link">
                                             <span class="lnr lnr-link"></span>
+                                        </a>
+                                        <a class="img-pop" data-rel="lightcase" href="https://tracker.gg/valorant/profile/riot/nickyy%23ZzzZz/overview" title="Perfil">
+                                            <span class="lnr lnr-user"></span>
                                         </a>
                                     </div>
                                     <div class="grid-title">
@@ -381,20 +393,23 @@
                         </div>
                         <!-- End of Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
+                        <div class="grid-item MOBA grid-item-height" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL-1.jpg" alt="portfolio-img" class="portfolio-item" style="max-height: 355px;width: 370px;">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
-                                            <span class="lnr lnr-move"></span>
+                                        <a class="img-pop" data-rel="lightcase" href="https://esports.eldesmarque.com/wp-content/uploads/2019/09/LoL-1.jpg" title="Logo">
+                                            <span class="lnr lnr-frame-expand"></span>
                                         </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <a class="ext-link" href="https://www.leagueoflegends.com/es-mx/" target="_blank" title="Link">
                                             <span class="lnr lnr-link"></span>
+                                        </a>
+                                        <a class="img-pop" data-rel="lightcase" href="https://las.op.gg/summoners/las/iNicky05" title="Perfil">
+                                            <span class="lnr lnr-user"></span>
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Breakfast</h4>
+                                        <h4>League of Legends</h4>
                                     </div>
                                 </div>
 
@@ -402,62 +417,23 @@
                         </div>
                         <!-- End of Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="grid-item creative" data-aos="fade-up">
+                        <div class="grid-item Redes izquierda" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/480px-Steam_icon_logo.svg.png" style="background-color: #434D70;padding: 35px;" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
+                                        <a class="img-pop" data-rel="lightcase" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/480px-Steam_icon_logo.svg.png" title="Logo">
+                                            <span class="lnr lnr-frame-expand"></span>
                                         </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                        <a class="ext-link" href="https://store.steampowered.com/?l=spanish" target="_blank" title="Link">
                                             <span class="lnr lnr-link"></span>
+                                        </a>
+                                        <a class="ext-link" target="_blank" href="https://steamcommunity.com/id/NickyCL/" title="Perfil">
+                                            <span class="lnr lnr-user"></span>
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Chair</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Hidden Book</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Red</h4>
+                                        <h4>Steam</h4>
                                     </div>
                                 </div>
 
@@ -625,8 +601,6 @@
     </div>
 </footer>	<!-- External JS -->
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script src="vendor/bootstrap/popper.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="vendor/select2/select2.min.js "></script>
 	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
